@@ -21,11 +21,11 @@ class CreateJoueursTable extends Migration
             $table->string('lieunais');
             $table->string('taille');
             $table->string('poids');
-            $table->string('numéro_maillot');
+            $table->string('numero_maillot');
             $table->string('position_terrain');
             $table->text('details_joueurs');
             $table->string('photo_joueurs');
-            $table->string('vidéo_joueurs');
+            $table->string('video_joueurs');
             $table->timestamps();
         });
     }

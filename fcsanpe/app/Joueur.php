@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Joueurs extends Model
+class Joueur extends Model
 {
-    //
+    protected $guarded  = [];
 }

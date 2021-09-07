@@ -19,3 +19,8 @@ Route::get('/', function () {
 });
 
 Route::get('/admin','AdminController@index');
+
+Route::get('/joueurs.index', 'JoueursController@index')->name('joueurs.index');
+Route::get('/joueurs.create', 'JoueursController@create')->name('joueurs.create');
+Route::post('/joueurs.store', 'JoueursController@store')->name('joueurs.store');
+Route::get('/chauffeur.show/{id}','JoueursController@show')->name('joueurs.show');
