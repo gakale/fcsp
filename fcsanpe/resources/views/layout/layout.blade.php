@@ -107,7 +107,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-user-secret"></i>Joueurs</a></li>
+            <li><a href="{{route('joueurs.index')}}"><i class="fa fa-user-secret"></i>Joueurs</a></li>
             <li><a href="#"><i class="fa fa-users"></i>Equipes</a></li>
               <li><a href="#"><i class="fa fa-send"></i>Fourniseur</a></li>
             <li><a href="#"><i class="fa fa-opera"></i>Operateur</a></li>
