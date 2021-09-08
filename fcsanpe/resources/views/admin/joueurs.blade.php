@@ -72,7 +72,7 @@
                             <a href="#" >
                                 <i class="fa fa-pencil"></i>
                             </a>
-                            <a href="#" >
+                            <a type="button" class="btn btn-xs" data-toggle="modal" data-target="#modal-delete" title="Supprimer">
                                 <i class="fa fa-trash"></i>
                             </a>
                         </td>
@@ -84,6 +84,39 @@
             </table>
 
         </div>
+        <!-- Confirmation de la Suppression des données -->
+
+        <div class="modal fade" id="modal-delete">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h2 class="modal-title"  style="text-align: center;">Attention !</h2>
+                    </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <form action="{{ route('joueurs.destroy', $joueurs->id ) }}" class="form-group" method="post">
+                                    @csrf
+
+                                    <div class="form-group col-md-12">
+                                        <h3 class="" style="text-align: center;">Voulez vous vraiment supprimer le {{$joueurs->nom}} ?</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success pull-left" data-dismiss="modal">Non, Rétour</button>
+                                <button type="submit" class="btn btn-danger">Oui, Supprimer</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                </form>
+                <!-- /.modal-dialog -->
+            </div>
 
 
 

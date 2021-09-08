@@ -127,6 +127,8 @@ class JoueursController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $joueur = Joueur::where('id',$id)->first();
+        $joueur -> delete();
+        return redirect()->route('joueurs.index');
     }
 }

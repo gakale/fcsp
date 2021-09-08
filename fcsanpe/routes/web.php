@@ -24,6 +24,7 @@ Route::get('/joueurs.index', 'JoueursController@index')->name('joueurs.index');
 Route::get('/joueurs.create', 'JoueursController@create')->name('joueurs.create');
 Route::post('/joueurs.store', 'JoueursController@store')->name('joueurs.store');
 Route::get('/joueurs.show/{id}','JoueursController@show')->name('joueurs.show');
+Route::post('/joueurs.destroy/{id}/','JoueursController@destroy')->name('joueurs.destroy');
 
 
 // affichage des equipes pro 
