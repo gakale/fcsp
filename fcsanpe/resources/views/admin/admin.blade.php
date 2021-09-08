@@ -5,6 +5,10 @@
 @section('grand-text','Tableau de Bord')
 @section('grands','Tableau de Bord')
 @section('petit-text','Tableau de Bord')
+<br>
+<div class="container ">
+  <p class="text-danger ">Bilan de la saison 2020 - 2021</p>
+</div>
 
 <div class="container-fluid">
     <div class="row">
@@ -26,8 +30,21 @@
                 <span class="info-box-icon bg-green"><i class="ion ion-ios-gear-outline"></i></span>
     
                 <div class="info-box-content">
-                  <span class="info-box-text">Total Match</span>
-                  <span class="info-box-number">90</span>
+                  <span class="info-box-text">Total Match </span>
+                  <span class="info-box-number">200</span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="info-box">
+                <span class="info-box-icon bg-gey"><i class="ion ion-ios-gear-outline"></i></span>
+    
+                <div class="info-box-content">
+                  <span class="info-box-text">Nombre But</span>
+                  <span class="info-box-number">33</span>
                 </div>
                 <!-- /.info-box-content -->
               </div>
@@ -39,20 +56,7 @@
                 <span class="info-box-icon bg-red"><i class="ion ion-ios-gear-outline"></i></span>
     
                 <div class="info-box-content">
-                  <span class="info-box-text">CPU Traffic</span>
-                  <span class="info-box-number">90</span>
-                </div>
-                <!-- /.info-box-content -->
-              </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="info-box">
-                <span class="info-box-icon bg-yellow"><i class="ion ion-ios-gear-outline"></i></span>
-    
-                <div class="info-box-content">
-                  <span class="info-box-text">CPU Traffic</span>
+                  <span class="info-box-text">Carton Rouge</span>
                   <span class="info-box-number">90</span>
                 </div>
                 <!-- /.info-box-content -->
@@ -63,11 +67,11 @@
         <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="info-box">
-                <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
+                <span class="info-box-icon bg-yellow"><i class="ion ion-ios-gear-outline"></i></span>
     
                 <div class="info-box-content">
-                  <span class="info-box-text">CPU Traffic</span>
-                  <span class="info-box-number">90<small>%</small></span>
+                  <span class="info-box-text">Carton jaune</span>
+                  <span class="info-box-number">21</span>
                 </div>
                 <!-- /.info-box-content -->
               </div>
@@ -76,11 +80,11 @@
         <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="info-box">
-                <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
+                <span class="info-box-icon bg-aqua"><i class="fa fa-tv"></i></span>
     
                 <div class="info-box-content">
-                  <span class="info-box-text">CPU Traffic</span>
-                  <span class="info-box-number">90<small>%</small></span>
+                  <span class="info-box-text">Classement</span>
+                  <span class="info-box-number">2<small>eme</small></span>
                 </div>
                 <!-- /.info-box-content -->
               </div>        
@@ -89,11 +93,11 @@
         <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="info-box">
-                <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
+                <span class="info-box-icon bg-blue"><i class="fa fa-pencil"></i></span>
     
                 <div class="info-box-content">
-                  <span class="info-box-text">CPU Traffic</span>
-                  <span class="info-box-number">90<small>%</small></span>
+                  <span class="info-box-text">Article</span>
+                  <span class="info-box-number">10</span>
                 </div>
                 <!-- /.info-box-content -->
               </div>
@@ -102,11 +106,11 @@
         <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="info-box">
-                <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
+                <span class="info-box-icon bg-purple"><i class="fa fa-money"></i></span>
     
                 <div class="info-box-content">
-                  <span class="info-box-text">CPU Traffic</span>
-                  <span class="info-box-number">90<small>%</small></span>
+                  <span class="info-box-text">Categorie</span>
+                  <span class="info-box-number">20</span>
                 </div>
                 <!-- /.info-box-content -->
               </div>
@@ -148,8 +152,9 @@
 
 
 </div>
-
+@include('layout.pieds')
 @include('layout.pieds-dash')
 
 @stop
+
 

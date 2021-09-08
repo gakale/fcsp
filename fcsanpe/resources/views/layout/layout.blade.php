@@ -3,7 +3,6 @@
 @include('layout.entet')
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
-
   <header class="main-header">
     <!-- Logo -->
     <a href="index2.html" class="logo">
@@ -117,28 +116,26 @@
 
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-edit"></i> <span>Gestion Mission</span>
+            <i class="fa fa-edit"></i> <span>Gestion competion</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-book"></i> Rédaction</a></li>
-            <li><a href="#"><i class="fa fa-chain"></i> Mission encoure</a></li>
-            <li><a href="#"><i class="fa fa-calendar"></i>Course</a></li>
-            <li><a href="#"><i class="fa fa-cc-paypal"></i>Courses encoure</a></li>
-
+            <li><a href="#"><i class="fa fa-book"></i>Les Compétion</a></li>
+            <li><a href="#"><i class="fa fa-chain"></i> Match</a></li>
+            <li><a href="#"><i class="fa fa-calendar"></i>Saison</a></li>
           </ul>
         </li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-car"></i> <span>Gestion Vehicule</span>
+            <i class="fa fa-car"></i> <span>Le Staff  </span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="vehicule"><i class="fa fa-car"></i>Ajout Voiture</a></li>
+            <li><a href="vehicule"><i class="fa fa-car"></i>liste Staff</a></li>
           </ul>
         </li>
 
@@ -152,37 +149,29 @@
         </li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-folder"></i> <span>PANNE</span>
+            <i class="fa fa-folder"></i> <span>Caterogie</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i>Panne</a></li>
-            <li><a href="pages/examples/profile.html"><i class="fa fa-circle-o"></i>Top 10 Panne</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>Les Categories</a></li>
 
           </ul>
         </li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-cog"></i> <span>GARAGE</span>
+            <i class="fa fa-cog"></i> <span>Les buts</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-cog"></i>Entretient</a></li>
+            <li><a href="#"><i class="fa fa-cog"></i>Buts</a></li>
             <li class="treeview">
-
           </ul>
         </li>
-        <li><a href="#"><i class="fa fa-users"></i> <span>Assurance</span></a></li>
-
-        <li><a href="documents"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
-        <li class="header">LABELS</li>
-        <li><a href="#"><i class="fa fa-thermometer-full text-red"></i> <span>CARBURANT</span></a></li>
-        <li><a href="#"><i class="fa fa-share text-yellow"></i> <span>STOCK</span></a></li>
-        <li><a href="#"><i class="fa fa-map text-aqua"></i> <span>GPS</span></a></li>
+        
       </ul>
     </section>
     <!-- /.sidebar -->

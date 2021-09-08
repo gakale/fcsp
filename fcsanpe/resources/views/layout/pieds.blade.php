@@ -33,7 +33,7 @@
 <script src="dist/js/adminlte.min.js"></script>
 
 <script src="dist/js/pages/dashboard.js"></script>
-<!-- AdminLTE for demo purposes -->
+
 <script src="dist/js/demo.js"></script>
 <script src="bower_components/chart.js/dist/chart.js"></script>
 
