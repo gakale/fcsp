@@ -1,0 +1,976 @@
+
+@import url("https://fonts.googleapis.com/css?family=Exo:500,600,700|Roboto&display=swap");
+html {
+  overflow-x: hidden;
+}
+body {
+  line-height: 1.6;
+  font-family: "candara", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  color: #6F8BA4;
+  font-weight: 400;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
+  color: #222;
+}
+
+h1, .h1 {
+  font-size: 2.5rem;
+}
+
+h2, .h2 {
+  font-size: 44px;
+}
+
+h3, .h3 {
+  font-size: 1.5rem;
+}
+
+h4, .h4 {
+  font-size: 1.3rem;
+  line-height: 30px;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+}
+
+p {
+  line-height: 30px;
+}
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+.owl-carousel.owl-carousel .owl-item{-webkit-tap-highlight-color:transparent;position:relative,}
+.owl-carousel{display:none;width:100%;z-index:1;}
+.owl-carousel .owl-stage{position:relative;-ms-touch-action:pan-Y;touch-action:manipulation;-moz-backface-visibility:hidden;}
+.owl-carousel .owl-stage:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0,}
+.owl-carousel .owl-stage-outer{position:relative;overflow:hidden;-webkit-transform:translate3d(0,0,0),}
+.owl-carousel .owl-item,.owl-carousel .owl-wrapper{-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);}
+.owl-carousel .owl-item{
+	min-height:1px;
+	float:left;
+	-webkit-backface-visibility:hidden;
+	-webkit-touch-callout:none;}
+.owl-carousel .owl-item img{display:block;width:100%;}
+.owl-carousel .owl-dots.disabled,.owl-carousel .owl-nav.disabled{display:none}
+.no-js .owl-carousel,.owl-carousel.owl-loaded{display:block;}
+.owl-carousel .owl-dot,.owl-carousel .owl-nav .owl-next,.owl-carousel .owl-nav .owl-prev{
+	cursor:pointer;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;}
+.owl-carousel.owl-nav button.owl-next,.owl-carousel .owl-nav button.owl-prev,.owl-carousel button.owl-dot{
+	background:0 0;
+	color:inherit;
+	border:none;
+	padding:0!important;
+	font:inherit;
+	}
+.owl-carousel.owl-loading{
+	opacity:0;
+	display:block;
+	}
+.owl-carousel.owl-hidden{opacity:0;}
+.owl-carousel.owl-refresh .owl-item{visibility:hidden;}
+.owl-carousel.owl-drag .owl-item{
+	-ms-touch-action:pan-y;
+	touch-action:pan-y;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	}
+.owl-carousel.owl-grab{cursor:move;cursor:grab}
+.owl-carousel.owl-rtl{direction:rtl}
+.owl-carousel.owl-rtl .owl-item{float:right}
+.owl-carousel .animated{
+	animation-duration:1s;
+	animation-fill-mode:both;
+	}
+.owl-carousel .owl-animated-in{z-index:0;}
+.owl-carousel .owl-animated-out{z-index:1;}
+.owl-carousel .fadeOut{animation-name:fadeOut;}
+@keyframes fadeOut{0%{opacity:1}100%{opacity:0;}}
+.owl-height{transition:height .5s ease-in-out;}
+.owl-carousel .owl-item .owl-lazy{opacity:0;transition:opacity .4s ease}
+.owl-carousel .owl-item .owl-lazy:not([src]),.owl-carousel .owl-item .owl-lazy[src^=""]{max-height:0;}
+.owl-carousel .owl-item img.owl-lazy{transform-style:preserve-3d}
+.owl-carousel .owl-video-wrapper{position:relative;height:100%;background:#000;}
+.owl-carousel .owl-video-play-icon{
+	position:absolute;
+	height:80px;
+	width:80px;
+	left:50%;
+	top:50%;
+	margin-left:-40px;
+	margin-top:-40px;
+	background:url(owl.video.play.png) no-repeat;
+	cursor:pointer;
+	z-index:1;
+	-webkit-backface-visibility:hidden;
+	transition:transform .1s ease;
+	}
+.owl-carousel .owl-video-play-icon:hover{-ms-transform:scale(1.3,1.3);transform:scale(1.3,1.3)}.
+.owl-carousel .owl-video-playing .owl-video-play-icon,.owl-carousel .owl-video-playing .owl-video-tn{display:none}
+.owl-carousel .owl-video-tn{
+	opacity:0;
+	height:100%;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:contain;
+	transition:opacity .4s ease;
+	}
+.owl-carousel .owl-video-frame{
+	position:relative;
+	z-index:1;
+	height:100%;
+	width:100%;
+	}
+	
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+/*
+ * 	Default theme - Owl Carousel CSS File
+ */
+.owl-theme .owl-nav {
+  margin-top: 10px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; }
+  .owl-theme .owl-nav [class*='owl-'] {
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #D6D6D6;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px; }
+    .owl-theme .owl-nav [class*='owl-']:hover {
+      background: #869791;
+      color: #FFF;
+      text-decoration: none; }
+  .owl-theme .owl-nav .disabled {
+    opacity: 0.5;
+    cursor: default; }
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 10px; }
+
+.owl-theme .owl-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; }
+  .owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    *display: inline; }
+    .owl-theme .owl-dots .owl-dot span {
+      width: 10px;
+      height: 10px;
+      margin: 5px 7px;
+      background: #D6D6D6;
+      display: block;
+      -webkit-backface-visibility: visible;
+      transition: opacity 200ms ease;
+      border-radius: 30px; }
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+      background: #869791; }
+/*carroussel patenaire*/
+
+.brands {
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.space{
+	margin-left:50px;
+	margin-right: 50px
+}
+
+.space-1{
+	margin-left:30px;
+	margin-right: 30px
+}
+
+.brands_slider_container {
+    height: 130px;
+    border: solid 1px #e8e8e8;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    padding-left: 97px;
+    padding-right: 97px;
+    background: #fff;
+}
+
+.brands_slider {
+    height: 100%;
+    margin-top: 50px;
+}
+
+.brands_item {
+    height: 100%;
+}
+
+.brands_item img {
+    max-width: 100%;
+}
+
+.brands_nav {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 5px;
+    cursor: pointer;
+}
+
+.brands_nav i {
+    color: #e5e5e5;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.brands_nav:hover i {
+    color: #676767;
+}
+
+.brands_prev {
+    left: 40px;
+}
+
+.brands_next {
+    right: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.lh-35 {
+  line-height: 35px;
+}
+
+.footer-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-menu a:hover {
+  color: #fff;
+}
+.title-footer {
+ color:#fff;
+ font-size: 700;
+}
+.footer-socials li a {
+  width: 45px;
+  height: 45px;
+  /*background: #fff;*/
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  border-radius: 100%;
+  /*border-color: white;
+  border: solid 1px;*/
+  padding-top: 8px;
+  padding-bottom: 5px;
+  margin-top:5px;
+}
+.footer-link {
+	text-decoration: none;
+	color: #fff;
+}
+.footer-link a:hover {
+	color: #fff;
+}
+
+.page-title {
+  padding: 120px 0px 70px 0px;
+  position: relative;
+}
+/*.page-title img {
+	width: 100%;
+	height: 100%;
+	margin-bottom: -5px;
+	transition: all 0.3s ease-out;
+	position: relative;
+	z-index: 2;
+}
+.page-title:hover img {
+	transform: scale(1.2, 1.2);
+	z-index: 9;
+}*/
+
+.zoom section img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.zoom section:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.overlay:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  background: #223a66;
+}
+.title-text {
+	font-size: 2.5rem;
+	color: White;
+	text-align: left;
+	font-weight: 700;
+}
+
+  /* [1] The container */
+  .img-hover-zoom {
+	 /* [1.1] Set it as per your need */
+	overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  }
+
+  /* Brightness-zoom Container */
+	.img-hover-zoom--brightness img {
+	  transition: transform 2s, filter 1.5s ease-in-out;
+	  transform-origin: center center;
+	  filter: brightness(75%);
+	  /*border: 1px solid #fff;
+	  outline: 1px solid #fff;*/
+	  width: 100%;
+	  height: 100%;
+	}
+
+	/* The Transformation */
+	.img-hover-zoom--brightness:hover img {
+	  filter: brightness(100%);
+	  transform: scale(1.3);
+	}
+	
+	#img-fcsp-tv img{
+	height:200px;
+	overflow: hidden
+	}
+
+	   /*Code css pour la section fcsp TV*/
+
+ .fcsp-tv{
+  background-color: #f65101;
+  padding-bottom: 20px;
+ }
+ /*menu de la section fcsp tv
+ * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #000;
+  font-family: "Exo", sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 10px;
+  font-weight: 100;
+  color: white;
+  text-align: left;
+  padding: 5px 5px;
+  text-decoration: none;
+}
+/* Create three equal columns that floats next to each other 
+.column {
+  float: left;
+  /*width: 33.33%;
+  padding: 10px;
+  background-color: #fff;
+  text-align: left;
+  height: 250px;
+}
+/*a {
+  color: #f65101;
+  text-decoration: none;
+  transition: all .35s ease;
+  font-family:"Exo", sans-serif;
+  font-size:10px;
+}
+
+a:focus, a:hover {
+  color: #f65101;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+.column a {
+  float: none;
+  color:#f65101;
+  padding: 16px;
+  /*text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #f65101;
+  color:#fff;
+}
+
+/* Clear floats after the columns 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}*/
+.navbar-fcsp-tv {
+  overflow: hidden;
+  background-color: #000;
+  font-family: "Exo", sans-serif;
+}
+
+.navbar-fcsp-tv a {
+  float: left;
+  font-size: 10px;
+  font-weight:100;
+  color: white;
+  text-align: left;
+  padding: 5px 5px;
+  text-decoration: none;
+}
+
+.navbar-fcsp-tv a:hover, .dropdown:hover .dropbtn {
+  background-color: #000;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: #fff;
+  height: 250px;
+}
+
+.column a {
+  float: none;
+  color: #f65101;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #f65101;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*bouton voir plus de fcsp tv*/
+.btn-outline-fcsp-tv {
+  color: #000;
+  border-color: #000;
+}
+.btn-outline-fcsp-tv:hover {
+  color: #f65101;
+  background-color: #fff;
+  border-color: #0d6efd;
+}
+/*Grand bloc section fcsp-tv*/
+.container-na {
+  position: relative;
+  max-width: 700px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+.container-na .content-na {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 546px; /* Full width */
+  padding: 20px; /* Some padding */
+}
+
+/* Container holding the image and the text */
+.container-shop {
+  position: relative;
+  padding-left: 5px;
+}
+
+/* Bottom right text */
+.content-shop {
+  position: absolute;
+  bottom: 0px;
+  /*right: 20px;*/
+  background-color:  #f65101;
+  color: white;
+  padding-left: 10px;
+  padding-right: 0px;
+  width: 100%;
+  margin-right: 1px;
+}
+.content-shop h1{
+	color: #fff;
+  m
+}
+/* Top left text of title shop */
+.title-shop {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+.title-shop{
+	border: solid 2px;
+	color: #fff;
+	background-color: #f65101;
+	border-color: #f65101;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+/*Grand bloc section news*/
+
+/* Container holding the image and the text */
+.container-news {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+/* Bottom right text */
+.content-news {
+  position: absolute;
+  bottom: 10px;
+  /*right: 11px;*/
+  background-color: #f65100;
+  color: white;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 96.9%;
+  margin-right: 1px;
+}
+.content-news h2{
+	color: #000;
+  padding-left: 5px;
+}
+/* Top left text of title shop */
+.title-news {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+.title-news{
+	border: solid 2px;
+	color: #fff;
+	background-color: #f65101;
+	border-color: #f65101;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+
+/*Grand bloc section match à l'affiche
+.container-m-ofday{
+	margin-left: -22px;
+}*/
+
+/*block widget gauche*/
+.fixed-left {
+  position: fixed-left;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  float: left;
+}
+
+/*section news-id1*/
+.news-id1 p::first-letter{
+	font-size: 100px;
+	color: #f65101;
+	font-weight: 700;
+}
+.news-id1{
+	margin-left: 230px;
+	margin-right: 250px;
+	margin-top: -600px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	text-align: center;
+}
+.icon-bar {
+  text-align: right;
+}
+.icon-bar span{
+	color: #f65101;
+	font-weight: 500;
+	font-size: 15px;
+}
+
+/* Style des icon bar links */
+.icon-bar a {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+  border-radius: 100%;
+  text-decoration: none;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+/*navbar-menu-shop*/
+.navbar-menu-shop {
+  overflow: hidden;
+  background-color: #000;
+  font-family: "Exo", sans-serif;
+}
+
+.navbar-menu-shop a {
+  float: left;
+  font-size: 10px;
+  font-weight:100;
+  color: white;
+  text-align: left;
+  padding: 5px 5px;
+  text-decoration: none;
+}
+
+.navbar-menu-shop a:hover, .dropdown:hover .dropbtn {
+  background-color: #000;
+}
+/* Create three equal columns that floats next to each other */
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: #fff;
+  height: 250px;
+}
+
+.column a {
+  float: none;
+  color: #f65101;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #f65101;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*bouton voir plus de fcsp tv*/
+.btn-outline-menu-shop {
+  color: #000;
+  border-color: #000;
+}
+.btn-outline-menu-shop:hover {
+  color: #f65101;
+  background-color: #fff;
+  border-color: #0d6efd;
+}
+
+/*CSS de produit*/
+.cards {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  height: 500px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#match {background-color: red;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
+
+/*Grand bloc section photo FCSP*/
+.container-picture {
+  position: relative;
+  max-width: 700px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+.container-picture .content-picture {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100px; /* Full width */
+  padding: 20px; /* Some padding */
+}
+
+/* [1] The container */
+  .div-hover-zoom {
+	 /* [1.1] Set it as per your need */
+	overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  }
+
+  /* Brightness-zoom Container */
+	.div-hover-zoom--brightness div {
+	  transition: transform 2s, filter 1.5s ease-in-out;
+	  transform-origin: center center;
+	  filter: brightness(75%);
+	  /*border: 1px solid #fff;
+	  outline: 1px solid #fff;*/
+	  width: 100%;
+	  height: 100%;
+	}
+
+	/* The Transformation */
+	.div-hover-zoom--brightness:hover div {
+	  filter: brightness(100%);
+	  transform: scale(1.3);
+	}
+
+  .transparent {
+    position: relative;
+    max-width: 800px; /* Maximum width */
+    margin: 0 auto; /* Center it */
+  }
+  
+  .transparent .trans {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+  }
+
+  .a-style{
+    text-decoration: none;
+    background-color:#f65101;
+    color: #fff;
+    padding: 5px;
+    float: center;
+    border-radius: 15px;
+  }
+
+  a:hover.a-style{
+    text-decoration: none;
+    background-color:#000;
+    color: #fff;
+  }
+
+  .d-a_style{
+    padding-bottom: 5px
+  }
+  .header-main{
+  	display: flex;
+  }

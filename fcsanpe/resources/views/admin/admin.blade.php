@@ -152,7 +152,7 @@
 
 
 </div>
-@include('layout.pieds')
+
 @include('layout.pieds-dash')
 
 @stop
