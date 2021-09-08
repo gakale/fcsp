@@ -100,7 +100,11 @@
 
                                             <span class="input-group-addon"><i class="fa fa-money fa-fw"></i></span>
 
+<<<<<<< HEAD
                                             <input disabled value="{{$joueur->lieunais}}" type="text" id="lieunais"   class="form-control ">
+=======
+                                            <input value="{{$joueur->lieunais}}" type="text" id="lieunais"   class="form-control ">
+>>>>>>> aab7de708f137049a812198f97b9710e53624831
 
                                    
                                         </div>
@@ -165,8 +169,16 @@
 
                                                             <span class="input-group-addon"><i class="fa fa-pencil fa-fw"></i></span>
 
+<<<<<<< HEAD
                                                             <input type="text" disabled id="numero_maillot" value="{{$joueur->numero_maillot}}" name="numero_maillot"  class="form-control ">
                                                         
+=======
+                                                            <input type="text" id="numero_maillot" name="numero_maillot"  class="form-control  {{$errors->has('numero_maillot')? 'is-invalid': ''}}" placeholder="Entrée le numéro maillot">
+                                                            @if($errors->has('numero_maillot'))
+                                                            <span class="invalid-feedback">{{$errors->first('numero_maillot')}}</span>
+                                                        @endif
+                                                        <span class="invalid-feedback"></span>
+>>>>>>> aab7de708f137049a812198f97b9710e53624831
                                                         </div>
                                                         
 
@@ -186,8 +198,15 @@
 
                                                         <span class="input-group-addon"><i class="fa fa-pencil fa-fw"></i></span>
 
+<<<<<<< HEAD
                                                         <input type="text" disabled id="position_terrain" value="{{$joueur->position_terrain}}" name="position_terrain" class="form-control ">
                                                         
+=======
+                                                        <input type="text" id="position_terrain" name="position_terrain" class="form-control {{$errors->has('position_terrain')? 'is-invalid': ''}}" placeholder="Entrée le numéro maillot">
+                                                        @if($errors->has('position_terrain'))
+                                                            <span class="invalid-feedback">{{$errors->first('position_terrain')}}</span>
+                                                      @endif
+>>>>>>> aab7de708f137049a812198f97b9710e53624831
                                                       <span class="invalid-feedback"></span>
                                                     </div>
                                                     
@@ -206,8 +225,15 @@
 
                                                         <span class="input-group-addon"><i class="fa fa-pencil fa-fw"></i></span>
 
+<<<<<<< HEAD
                                                         <textarea disabled name="details_joueurs" class="form-control ">{{$joueur->details_joueurs}}</textarea>
                                                         
+=======
+                                                        <textarea name="details_joueurs" class="form-control  {{$errors->has('details_joueurs')? 'is-invalid' : ''}}" id="details_joueurs" ></textarea>
+                                                        @if($errors->has('details_joueurs'))
+                                                             <span class="invalid-feedback">{{$errors->first('details_joueurs')}}</span>
+                                                        @endif
+>>>>>>> aab7de708f137049a812198f97b9710e53624831
                                                         <span class="invalid-feedback"></span>
                                                     </div>
                                                     
@@ -226,8 +252,17 @@
 
                                                     <div class="input-group">
 
+<<<<<<< HEAD
                                                         <img height="70" width="70" src="{{Storage::url($joueur->photo_joueurs)}}" alt=""  id="photo_joueurs" >
                                                         
+=======
+                                                        <span class="input-group-addon"><i class="fa fa-pencil fa-fw"></i></span>
+
+                                                        <input name="photo_joueurs" type="file" class="form-control {{$errors->has('photo_joueurs')? 'is-invalid' : ''}}" id="details_joueurs" >
+                                                        @if($errors->has('photo_joueurs'))
+                                                             <span class="invalid-feedback">{{$errors->first('photo_joueurs')}}</span>
+                                                        @endif
+>>>>>>> aab7de708f137049a812198f97b9710e53624831
                                                         <span class="invalid-feedback"></span>
                                                     </div>
                                                     
@@ -246,8 +281,16 @@
 
                                                         <span class="input-group-addon"><i class="fa fa-pencil fa-fw"></i></span>
 
+<<<<<<< HEAD
                                                       <a href="{{$joueur->video_joueurs}}">  <input value="{{$joueur->video_joueurs}}" class="form-control" type="text" id="video_joueurs"  class="form-control "></a>
                                                        
+=======
+                                                        <input type="text" id="video_joueurs" name="video_joueurs" class="form-control {{$errors->has('video_joueurs')? 'is-invalid' : ''}}" placeholder="Entrée le liens de la vidéo">
+                                                        @if($errors->has('video_joueurs'))
+                                                              <span class="invalid-feedback">{{$errors->first('video_joueurs')}}</span>
+                                                         @endif
+                                                         <span class="invalid-feedback"></span>
+>>>>>>> aab7de708f137049a812198f97b9710e53624831
                                                     </div>
                                                    
                                                 </div>

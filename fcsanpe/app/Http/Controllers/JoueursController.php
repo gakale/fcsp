@@ -57,6 +57,7 @@ class JoueursController extends Controller
         $joueur->numero_maillot = $validated['numero_maillot'];
         $joueur->position_terrain = $validated['position_terrain'];
         $joueur->details_joueurs = $validated['details_joueurs'];
+<<<<<<< HEAD
         
         $filename = time().'.'.$request->photo_joueurs->extension();
 
@@ -74,6 +75,11 @@ class JoueursController extends Controller
         // $name = time().'.'.$file-> getClientOriginalName();
         // $files= $file->move('/uploads',$name);
       
+=======
+        $photojoueurs = request('photo_joueurs')->store('uploads','public');
+
+        $joueur->photo_joueurs = $photojoueurs;
+>>>>>>> aab7de708f137049a812198f97b9710e53624831
         $joueur->video_joueurs = $validated['video_joueurs'];
 
         $joueur->save();

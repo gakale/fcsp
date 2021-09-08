@@ -72,7 +72,11 @@
                             <a href="#" >
                                 <i class="fa fa-pencil"></i>
                             </a>
+<<<<<<< HEAD
                             <a type="button" class="btn btn-xs" data-toggle="modal" data-target="#modal-delete" title="Supprimer">
+=======
+                            <a href="#" >
+>>>>>>> aab7de708f137049a812198f97b9710e53624831
                                 <i class="fa fa-trash"></i>
                             </a>
                         </td>
@@ -84,6 +88,7 @@
             </table>
 
         </div>
+<<<<<<< HEAD
         <!-- Confirmation de la Suppression des données -->
 
         <div class="modal fade" id="modal-delete">
@@ -117,6 +122,8 @@
                 </form>
                 <!-- /.modal-dialog -->
             </div>
+=======
+>>>>>>> aab7de708f137049a812198f97b9710e53624831
 
 
 
