@@ -15,8 +15,8 @@ class EquipeProController extends Controller
     public function index()
     {
         $joueur = DB::table('joueurs')->orderBy('created_at','DESC')->paginate(10);
-        dd($joueur);
-        return view('effectif-pro',compact('joueur'));
+        
+        return view('acceuil/effectif-pro',compact('joueur'));
     }
       
 

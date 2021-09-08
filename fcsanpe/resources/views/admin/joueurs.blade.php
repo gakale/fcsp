@@ -101,7 +101,7 @@
                                     @csrf
 
                                     <div class="form-group col-md-12">
-                                        <h3 class="" style="text-align: center;">Voulez vous vraiment supprimer le {{$joueurs->nom}} ?</h3>
+                                        <h3 class="" style="text-align: center;">Voulez vous vraiment supprimer ces données ?</h3>
                                     </div>
                                 </div>
                             </div>

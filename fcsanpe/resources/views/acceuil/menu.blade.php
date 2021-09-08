@@ -44,7 +44,7 @@
                     <li class="h-club"><a href="patenaires.php">Partenaires</a></li>
                 </ul>
             </li><!--
-            --><li class="nav-item"><a href="#">Equipe Pro</a>
+            --><li class="nav-item"><a href="{{route('equipepro.index')}}">Equipe Pro</a>
                 <ul>
                     <li class="h-pro"><a href="#">Classement</a></li>
                     <li class="h-pro"><a href="#">Resultat</a></li>
@@ -54,7 +54,7 @@
             --><li class="nav-item"><a href="#">Academie</a>
                 <ul>
                     <li class="nav-item h-academie"><a href="#">Staff</a></li>
-                    <li class="nav-item h-academie"><a href="#">EQUIPE PRO</a></li>
+                    <li class="nav-item h-academie"><a href="{{route('equipepro.index')}}">EQUIPE PRO</a></li>
                     <li class="nav-item h-academie"><a href="#">U13</a></li>
                     <li class="nav-item h-academie"><a href="#">U15</a></li>
                     <li class="nav-item h-academie"><a href="#">U17</a></li>

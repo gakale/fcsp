@@ -24,9 +24,10 @@ Route::get('/joueurs.index', 'JoueursController@index')->name('joueurs.index');
 Route::get('/joueurs.create', 'JoueursController@create')->name('joueurs.create');
 Route::post('/joueurs.store', 'JoueursController@store')->name('joueurs.store');
 Route::get('/joueurs.show/{id}','JoueursController@show')->name('joueurs.show');
+Route::patch('/joueurs.update/{id}/','JoueursController@update')->name('joueurs.update');
 Route::post('/joueurs.destroy/{id}/','JoueursController@destroy')->name('joueurs.destroy');
 
 
 // affichage des equipes pro 
 
-Route::get('/equipepro','EquipeProController@index')->name('equipepro.index');
+Route::get('/effectif-pro','EquipeProController@index')->name('equipepro.index');
