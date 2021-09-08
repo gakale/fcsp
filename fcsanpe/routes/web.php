@@ -23,4 +23,9 @@ Route::get('/admin','AdminController@index')->name('admin.index');
 Route::get('/joueurs.index', 'JoueursController@index')->name('joueurs.index');
 Route::get('/joueurs.create', 'JoueursController@create')->name('joueurs.create');
 Route::post('/joueurs.store', 'JoueursController@store')->name('joueurs.store');
-Route::get('/chauffeur.show/{id}','JoueursController@show')->name('joueurs.show');
+Route::get('/joueurs.show/{id}','JoueursController@show')->name('joueurs.show');
+
+
+// affichage des equipes pro 
+
+Route::get('/equipepro','EquipeProController@index')->name('equipepro.index');
